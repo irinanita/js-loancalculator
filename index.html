@@ -53,16 +53,65 @@
               </div>
               <div class="form-group">
                 <input
-                    type="number"
-                    class="form-control"
-                    id="year"
-                    placeholder="Years to Repay"
-                  />
+                  type="number"
+                  class="form-control"
+                  id="year"
+                  placeholder="Years to Repay"
+                />
               </div>
               <div class="form-group">
-                <input type="submit" value="Calculate" class="btn btn-dark btn-block">
+                <input
+                  type="submit"
+                  value="Calculate"
+                  class="btn btn-dark btn-block"
+                />
               </div>
             </form>
+            <!-- Loader Here -->
+            <!-- Results -->
+            <div id="results" class="pt-4">
+              <h5>Results</h5>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Monthly Payment</span>
+                  </div>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="monthly-payment"
+                    disabled
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Total Payment</span>
+                  </div>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="Total-payment"
+                    disabled
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Total Interest</span>
+                  </div>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="total-interest"
+                    disabled
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
