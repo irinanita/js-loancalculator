@@ -6,7 +6,7 @@ document.getElementById("loan-form").addEventListener("submit", function (e) {
   // Show loader
   document.getElementById("loading").style.display = "block";
 
-  setTimeout(calculateResults, 1000);
+  setTimeout(calculateResults, 3000);
 
   e.preventDefault();
 });
@@ -51,6 +51,17 @@ function calculateResults() {
 
 // Show Error
 function showError(error) {
+ // Hide any previously displayed results
+ document.getElementById("results").style.display = "none";
+
+ // Hide loader
+ document.getElementById("loading").style.display = "none";
+
+  // Clear any previous errors in case the form is submitted in less than 3s after previous submit
+  if (document.querySelector(".alert") != null) {
+    clearError();
+  }
+
   // Create div
   const errorDiv = document.createElement("div");
 
