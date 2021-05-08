@@ -51,11 +51,11 @@ function calculateResults() {
 
 // Show Error
 function showError(error) {
- // Hide any previously displayed results
- document.getElementById("results").style.display = "none";
+  // Hide any previously displayed results
+  document.getElementById("results").style.display = "none";
 
- // Hide loader
- document.getElementById("loading").style.display = "none";
+  // Hide loader
+  document.getElementById("loading").style.display = "none";
 
   // Clear any previous errors in case the form is submitted in less than 3s after previous submit
   if (document.querySelector(".alert") != null) {
