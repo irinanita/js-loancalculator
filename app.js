@@ -1,6 +1,6 @@
 // Listen for submit
 document.getElementById("loan-form").addEventListener("submit", function (e) {
-  // Hide results
+  // Hide any previously displayed results
   document.getElementById("results").style.display = "none";
 
   // Show loader
@@ -42,8 +42,9 @@ function calculateResults() {
     // Hide loader
     document.getElementById("loading").style.display = "none";
   } else {
-       // Hide loader
-       document.getElementById("loading").style.display = "none";
+    // Hide loader
+    document.getElementById("loading").style.display = "none";
+
     showError("Please check your numbers");
   }
 }
